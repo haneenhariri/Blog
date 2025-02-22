@@ -12,7 +12,7 @@ import store from './redux/store/index.ts'
 const routes = createBrowserRouter(
   [
     {
-      path: '/',
+      path: '',
       element: <Home/>
     },
     {
@@ -23,7 +23,7 @@ const routes = createBrowserRouter(
       path: '/new',
       element: <Newsletter/>
     }
-  ]
+  ], { basename: '/Blog/'}
 )
 
 
